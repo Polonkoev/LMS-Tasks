@@ -96,15 +96,58 @@
 
 
 //Задача 29
-function getEvenNumbers(start, end) {
-    let result = []
-    for (let i = start; i <= end; i += 1){
-        if (i % 2 === 0) {
-            console.log(i)
-        }
-    }
-    return;
-   
-  }
 
-getEvenNumbers(3, 11)
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+//   let result = [];
+//   for (let i = start; i <= end; i += 1)
+//     if (i % 2 === 0) {
+//       result.push(i);
+//     }
+//   console.log(result);
+//   // Change code above this line
+// }
+// getEvenNumbers(2, 5);
+
+//Задача 30
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// Задача 31
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       return i;
+//     }
+//   }
+
+//   return number;
+//   // Change code above this line
+// }
+
+// Задача 32
+// function includes(array, value) {
+//   let res = array.slice();
+//   let ggg = false;
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (res[i] === value) {
+//       ggg = res[i];
+
+//     }
+//   }
+//   console.log(ggg === value);
+// }
+
+// includes([1, 2, 3, 4, 5], 3);
