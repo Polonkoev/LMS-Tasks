@@ -38,7 +38,7 @@
 //Задача 25
 // function getCommonElements(array1, array2) {
 
-// let result = []
+// const result = []
 //     for (let i = 0; i < array1.length; i += 1){
         
 //         if (array2.includes(array1[i])) {
