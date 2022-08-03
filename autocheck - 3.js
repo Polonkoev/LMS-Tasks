@@ -246,23 +246,88 @@ propCount = keys.length
 */
 //Задача 15
 /*
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+// Change code below this line
+const keys = Object.keys(apartment);
+const values = Object.values(apartment);
 
 */
 //Задача 16
 /*
+function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  // Change code below this line
+const salariesProp = Object.values(salaries);
+  for (const salary of salariesProp){
+  
+  totalSalary += salary}
+  // Change code above this line
+  return totalSalary;
+}
 
 */
 //Задача 17
 /*
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
 
+const hexColors = [];
+const rgbColors = [];
+// Change code below this line
+for (const color of colors) {
+  hexColors.push(color.hex)
+  rgbColors.push(color.rgb)
+}
 */
 //Задача 18
 /*
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function getProductPrice(productName) {
+  // Change code below this line
+
+  for (const product of products) {
+    if(productName.includes(product.name)){
+      // console.log(product.price)
+      return(product.price)
+    }
+  
+}
+return null
+  // Change code above this line
+}
 
 */
 //Задача 19
-/*
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
 
-*/
+function getAllPropValues(propName) {
+  // Change code below this line
+  for (const product of products) {
+    if ([propName] === product[propName])
+      console.log('ok')
+  }
+  //  console.log([product[propName]])
 
+  // Change code above this line
+}
+getAllPropValues("name")
 
