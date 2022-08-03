@@ -145,25 +145,124 @@ const product = {
 */
 //Задача 9
 /*
+const emailInputName = "email";
+const passwordInputName = "password";
 
+const credentials = {
+  // Change code below this line
+[emailInputName] : "henry.carter@aptmail.com",
+  
+[passwordInputName] : "jqueryismyjam",
+
+
+  // Change code above this line
+};
 */
+
 //Задача 10
 /*
+
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const keys = [];
+const values = [];
+// Change code below this line
+  for (key in apartment){
+  keys.push(key);
+ values.push(apartment[key])
+  };
+
 
 */
 //Задача 11
 /*
+const keys = [];
+const values = [];
+const advert = {
+  service: "apt",
+};
+const apartment = Object.create(advert);
+apartment.descr = "Spacious apartment in the city center";
+apartment.rating = 4;
+apartment.price = 2153;
+
+for (const key in apartment) {
+  // Change code below this line
+if(apartment.hasOwnProperty(key)){
+  keys.push(key);
+  values.push(apartment[key]);
+}
+  // Change code above this line
+}
 
 */
+
+
+
 //Задача 12
 /*
+function countProps(object) {
+  let propCount = 0;
+  // Change code below this line
+for (key in object){
+  propCount += object.hasOwnProperty(key)
+  console.log(propCount);}
+
+  // Change code above this line
+  return propCount;
+}
 
 */
 //Задача 13
 /*
-
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+// Change code below this line
+const keys = Object.keys(apartment);
+for (const key of keys){
+  values.push(apartment[key])
+}
 */
 //Задача 14
 /*
+function countProps(object) {
+  
+  let propCount = 0;
+
+  const keys = Object.keys(object)
+propCount = keys.length
+  console.log(propCount);
+  return propCount;
+  
+}
 
 */
+//Задача 15
+/*
+
+*/
+//Задача 16
+/*
+
+*/
+//Задача 17
+/*
+
+*/
+//Задача 18
+/*
+
+*/
+//Задача 19
+/*
+
+*/
+
+
