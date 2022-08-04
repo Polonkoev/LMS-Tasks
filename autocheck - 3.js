@@ -312,7 +312,7 @@ return null
 
 */
 //Задача 19
-const products = [
+/* const products = [
   { name: "Radar", price: 1300, quantity: 4 },
   { name: "Scanner", price: 2700, quantity: 3 },
   { name: "Droid", price: 400, quantity: 7 },
@@ -321,13 +321,17 @@ const products = [
 
 function getAllPropValues(propName) {
   // Change code below this line
+const prop = [];
   for (const product of products) {
-    if ([propName] === product[propName])
-      console.log('ok')
+for (key in product) {
+  if(propName === key) {
+     prop.push(product[key]);
+  } 
+}
   }
-  //  console.log([product[propName]])
+return prop;
+
 
   // Change code above this line
 }
-getAllPropValues("name")
-
+*/
