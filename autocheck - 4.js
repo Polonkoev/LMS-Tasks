@@ -72,4 +72,136 @@
 
 
 //Задача 5
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+//    orderedItems.forEach(function (number) {
+//     totalPrice += number
+  
+//     });
 
+//   // Change code above this line
+//   return totalPrice;
+// }
+
+//Задача 6
+
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+
+//  numbers.forEach(numbers => {
+//      if (numbers > value) {
+//         filteredNumbers.push(numbers)
+        
+//     }
+//  });
+
+//   // Change code above this line
+//   console.log (filteredNumbers);
+// }
+// filterArray([1, 2, 3, 4, 5], 3)
+
+//Задача 7
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+
+//   firstArray.forEach(firstArray => {
+//     if (secondArray.includes(firstArray)) {
+//       commonElements.push(firstArray);
+//     }
+//   });
+                     
+
+//   return commonElements;
+//   // Change code above this line
+// }
+
+
+//Задача 8
+
+// // Change code below this line
+
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// }
+
+//Задача 9
+
+// // Change code below this line
+// const calculateTotalPrice = (quantity, pricePerItem) =>
+//   quantity * pricePerItem;
+// ;
+// // Change code above this line
+
+// Задача 10
+
+// // Change code below this line
+// const calculateTotalPrice = orderedItems => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach(item => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// }
+// // Change code above this line
+
+//Задача 11
+
+// // Change code below this line
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach(number => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+
+
+//Задача 12
+
+// Change code below this line
+// const  getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach(element => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+
+//Задача 13
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//     let result = []
+//     let newNumbers = []
+//     numbers.forEach(element => {
+//         if (element % 2 === 0) {
+
+//             result.push(numbers.indexOf(element))
+//         }
+//         newNumbers.push(numbers.splice(result, 0, value))
+//     });
+//     console.log(newNumbers)
+//     console.log(numbers)
+//     console.log(result)
+// }
+
+ 
+
+
+// changeEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10)
