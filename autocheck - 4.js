@@ -187,21 +187,150 @@
 //Задача 13
 // function changeEven(numbers, value) {
 //   // Change code below this line
-//     let result = []
-//     let newNumbers = []
-//     numbers.forEach(element => {
-//         if (element % 2 === 0) {
-
-//             result.push(numbers.indexOf(element))
-//         }
-//         newNumbers.push(numbers.splice(result, 0, value))
-//     });
-//     console.log(newNumbers)
-//     console.log(numbers)
-//     console.log(result)
+//   const newNumbers = []
+//   numbers.forEach(number => {
+//     number % 2 === 0 ? newNumbers.push(number + value) : newNumbers.push(number)
+   
+//   });
+//    return newNumbers
+//   // Change code above this line
 // }
 
- 
+// Задача 14
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map(planet => {
+//   return planet.length;
+// });
+
+// Задача 15
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const titles = books.map(title => title.title);
+
+// Задача 16
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
+// // Change code below this line
+
+// const genres = books.flatMap(allGenres => allGenres.genres);
+
+//Задача 17
+
+// Change code below this line
+// const getUserNames = users => {
+//     const names = users.map(names => names.name)
+//   return names
+
+//   };
+//   // Change code above this line
+
+//Задача 18
+
+// // Change code below this line
+// const getUserEmails = users => {
+    
+// const mails = users.map(emails => emails.email)
+//   return mails;
+//   };
+//   // Change code above this line
+
+// Задача 19
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+
+// const evenNumbers = numbers.filter(value => value % 2 === 0);
+// const oddNumbers = numbers.filter(value => value % 2 !== 0);
 
 
-// changeEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10)
+// Задача 20
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticism"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism", "adventure"],
+//   },
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap(genres => genres.genres);
+// const uniqueGenres = allGenres.filter(
+//   (genre, index, array) => array.indexOf(genre) === index
+// );
+
+
+//Задача 21
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+// // Change code below this line
+
+// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// const booksByAuthor = books.filter(book => book.author === AUTHOR);
