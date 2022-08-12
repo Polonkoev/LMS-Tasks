@@ -431,3 +431,342 @@
 
 //задача 24
 
+// // Change code below this line
+// const getUsersWithFriend = (users, friendName) => {
+//     const allFriends = users.filter(friend => friend.friends.includes(friendName))
+// console.log(allFriends);
+// };
+// // Change code above this line
+
+// Задача 25
+
+// // Change code below this line
+// const getFriends = (users) => {
+//     const friends = users.flatMap(friend => friend.friends)
+//     const uniqueFriends = friends.filter(
+//  (friends, index, array) => array.indexOf(friends) === index)
+//     console.log(uniqueFriends);
+// };
+// // Change code above this line
+
+//Задача 26
+
+
+
+// const getActiveUsers = (users) => {
+//     activeUsers = users.filter(user => user.isActive === true)
+//     console.log(activeUsers);
+// };
+
+//Задача 27
+
+// const getInactiveUsers = (users) => {
+//     inActiveUsers = users.filter(user => user.isActive === false)
+//     console.log(inActiveUsers);
+// };
+
+
+//Задача 28
+
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+// // Change code below this line
+
+// const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+// const bookByAuthor = books.find(book => book.author === AUTHOR);
+
+//Задача 29
+
+// // Change code below this line
+// const getUserWithEmail = (users, email) => {
+//    const userEmail = users.find(userWithemail => userWithemail.email === email);
+//   return userEmail
+// };
+// // Change code above this line
+
+
+//Задача 30
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every((value) => value % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every((value) => value % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every((value) => value % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every((value) => value % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every((value) => value % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every((value) => value % 2 !== 0);
+
+//Задача 31
+
+// // Change code below this line
+// const isEveryUserActive = (users) => {
+//    const usersIsActive = users.every(user => user.isActive === true);
+//   return usersIsActive;
+// };
+// // Change code above this line
+
+
+//Задача 32
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(value => value % 2 ===0);
+// const anyElementInFirstIsOdd = firstArray.some(value => value % 2 !==0);
+
+// const anyElementInSecondIsEven = secondArray.some(value => value % 2 ===0);
+// const anyElementInSecondIsOdd = secondArray.some(value => value % 2 !==0);
+
+// const anyElementInThirdIsEven = thirdArray.some(value => value % 2 ===0);
+// const anyElementInThirdIsOdd = thirdArray.some(value => value % 2 !==0);
+
+
+// Задача 33
+
+// // Change code below this line
+// const isAnyUserActive = users => {
+//    const usersIsActive = users.some(user => user.isActive === true);
+//   return usersIsActive
+// };
+// // Change code above this line
+
+//Задача 34
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((previousValue, playtimes) => {
+//   return previousValue + playtimes;
+// }, 0);
+// console.log(totalPlayTime);
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+//Задача 35
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+// const totalAveragePlaytimePerGame = players.reduce((total, averageTime) => {
+//     return total + averageTime.playtime / averageTime.gamesPlayed;
+// }, 0);
+// console.log(totalAveragePlaytimePerGame);
+
+
+// console.log(players.length);
+
+
+//Задача 36
+
+// Change code below this line
+// const calculateTotalBalance = users => {
+//    const sum = users.reduce((total, totalSum) => {
+//      return total + totalSum.balance
+//    }, 0);
+//     return console.log(sum);
+// };
+// // Change code above this line
+
+
+//Задача 37
+// const getTotalFriendCount = users => {
+//     const allFriends = users.reduce((total, friend) => {
+//     return total + friend.friends.length
+//     }, 0);
+//     return console.log(allFriends);
+// };
+
+
+//Задача 38
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+
+//Задача 39
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a -b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b -a);
+
+// Задача 40
+
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+
+//Задача 41
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((firstAuthor, secondAuthor) => firstAuthor.author.localeCompare(secondAuthor.author));
+
+// const sortedByReversedAuthorName = [...books].sort((firstAuthor, secondAuthor) => secondAuthor.author.localeCompare(firstAuthor.author));
+
+// const sortedByAscendingRating = [...books].sort((a, b) => a.rating - b.rating);
+
+// const sortedByDescentingRating =[...books].sort((a, b) => b.rating - a.rating);
+
+//Задача 42
+
+// // Change code below this line
+// const sortByAscendingBalance = users => {
+//    const result = users.sort((a, b) => a.balance - b.balance);
+//   return result;
+// };
+// // Change code above this line
+
+//Задача 43
+
+// // Change code below this line
+// const sortByDescendingFriendCount = users => {
+//    const result = [...users].sort((a, b) => b.friends.length - a.friends.length);
+//   return console.log(result);
+// };
+// // Change code above this line
+
+
+
+// Задача 44
+// Change code below this line
+// const sortByName = users => {
+//   const result = [...users].sort((a, b) => a.name.localeCompare(b.name));
+//   return console.log(result);;
+// };
+// // Change code above this line
+
+
+//Задача 45
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books].sort((a, b) => a.author.localeCompare(b.author)).filter(book => book.rating > MIN_BOOK_RATING).map(name => name.author);
+
+//Задача 46
+
+// // Change code below this line
+// const getNamesSortedByFriendCount = users => {
+//    const result = [...users].sort((a, b) => a.friends.length - b.friends.length).map(userName => userName.name)
+//   return result
+// };
+// // Change code above this line
+
+//Задача 47
+
+// Change code below this line
+// const getSortedFriends = users => {
+//     const result = [...users].flatMap(firendName => firendName.friends).filter(
+// (friendName, index, array) => array.indexOf(friendName) === index).sort()
+    
+//     console.log(result);
+// };
+
+
+//Задача 48
+
+// const getTotalBalanceByGender = (users, gender) => {
+//     const getTotalBalance = [...users].filter(genders => genders.gender === gender).reduce((total, allBalance) => {
+//     return total + allBalance.balance
+//     }, 0);
+//     console.log(getTotalBalance);
+// };
